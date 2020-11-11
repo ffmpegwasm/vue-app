@@ -23,12 +23,13 @@ export default defineComponent({
     });
     const message = ref('Click Start to Transcode');
     let video = ref(null);
+    const file = process.env.NODE_ENV === 'production' ? '/vue-app/flame.avi' : '/flame.avi';
     // methods
     async function transcode() {
       message.value = 'Loading ffmeg-core.js';
       await ffmpeg.load();
       message.value = 'Start transcoding';
-      ffmpeg.FS('writeFile', 'test.avi', await fetchFile('/flame.avi'));
+      ffmpeg.FS('writeFile', 'test.avi', await fetchFile(file));
       await ffmpeg.run('-i', 'test.avi', 'test.mp4');
       message.value = 'Complete transcoding';
       const data = ffmpeg.FS('readFile', 'test.mp4');
