@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.9.7",
-    "core-js": "^3.8.3",
+    "core-js": "^3.9.0",
     "vue": "^3.0.5"
   },
   "devDependencies": {
