@@ -8,7 +8,12 @@ module.exports = {
   configureWebpack: {
     devServer: {
       before: app => {
-        app.use('/node_modules/', express.static(path.resolve(__dirname, 'node_modules')))
+        app.use('/node_modules/', express.static(path.resolve(__dirname, 'node_modules')));
+        app.use((_, res, next) => {
+          res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+          res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+          next();
+        });
       }
     }
   }

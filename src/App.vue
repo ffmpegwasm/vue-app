@@ -10,7 +10,7 @@
   <p>{{ message }}</p>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, ref } from 'vue';
 import { createFFmpeg, fetchFile } from '@ffmpeg/ffmpeg';
 
