@@ -59,8 +59,6 @@ jobs:
           auto_fix: false
           git_name: github-actions[bot]
           git_email: github-actions[bot]@users.noreply.github.com
-          stylelint: true
-          stylelint_extensions: css,sass,scss,vue
           eslint: true
           eslint_extensions: js,ts,vue
           prettier: true
