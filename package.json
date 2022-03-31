@@ -3,28 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider; vue-cli-service serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; vue-cli-service build",
+    "lint": "export NODE_OPTIONS=--openssl-legacy-provider; vue-cli-service lint"
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.10.1",
-    "core-js": "^3.19.1",
-    "vue": "^3.2.22"
+    "core-js": "^3.21.1",
+    "vue": "^3.2.31"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "@ffmpeg/core": "^0.10.0",
-    "@vue/cli-plugin-babel": "^4.5.15",
-    "@vue/cli-plugin-eslint": "^4.5.15",
-    "@vue/cli-service": "^4.5.15",
-    "@vue/compiler-sfc": "^3.2.16",
+    "@vue/cli-plugin-babel": "^5.0.4",
+    "@vue/cli-plugin-eslint": "^5.0.4",
+    "@vue/cli-service": "^5.0.4",
+    "@vue/compiler-sfc": "^3.2.31",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^7.18.0"
+    "eslint": "^8.12.0",
+    "eslint-plugin-vue": "^8.5.0"
   },
   "author": {
     "name": "Vinayak Kulkarni",
     "email": "inbox.vinayak@gmail.com",
     "url": "https://vinayakkulkarni.dev"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=17.0.0",
+    "npm": ">=8.0.0"
   }
 }
