@@ -16,7 +16,7 @@
     "@babel/eslint-parser": "^7.17.0",
     "@ffmpeg/core": "^0.10.0",
     "@vue/cli-plugin-babel": "^5.0.6",
-    "@vue/cli-plugin-eslint": "^5.0.4",
+    "@vue/cli-plugin-eslint": "^5.0.6",
     "@vue/cli-service": "^5.0.6",
     "@vue/compiler-sfc": "^3.2.36",
     "eslint": "^8.18.0",
