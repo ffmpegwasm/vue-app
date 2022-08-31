@@ -18,7 +18,7 @@
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
-    "@vue/compiler-sfc": "^3.2.36",
+    "@vue/compiler-sfc": "^3.2.38",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.2.0",
     "vue-cli-plugin-compression": "^1.2.0",
