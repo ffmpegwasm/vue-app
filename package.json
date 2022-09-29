@@ -10,7 +10,7 @@
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.11.5",
     "core-js": "^3.25.2",
-    "vue": "^3.2.39"
+    "vue": "^3.2.40"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.9",
