@@ -13,7 +13,7 @@
     "vue": "^3.2.40"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.18.9",
+    "@babel/eslint-parser": "^7.19.1",
     "@ffmpeg/core": "^0.11.0",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
