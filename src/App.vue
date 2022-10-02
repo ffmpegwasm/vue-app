@@ -29,7 +29,7 @@ export default defineComponent({
         : "/flame.avi";
     // methods
     async function transcode() {
-      message.value = "Loading ffmeg-core.js";
+      message.value = "Loading ffmpeg-core.js";
       await ffmpeg.load();
       message.value = "Start transcoding";
       ffmpeg.FS("writeFile", "test.avi", await fetchFile(file));
